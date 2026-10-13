@@ -9,7 +9,7 @@ if [ -n "$SSH_CONNECTION" ] && [ -z "$TMUX" ] && command -v tmux &> /dev/null; t
     exit
 fi
 
-export LANG=en_US
+export LANG="en_US.UTF-8"
 
 
 HISTCONTROL=ignoreboth

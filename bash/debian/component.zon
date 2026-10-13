@@ -1,0 +1,17 @@
+.{
+    .packages = .{ "bash" },
+    .dependencies = .{ },
+
+    .config = .{
+        .{
+            .type = .file,
+            .src = "bashrc",
+            .dest = "~/.bashrc",
+        },
+        .{
+            .type = .file,
+            .src = "bash_aliases",
+            .dest = "~/.bash_aliases",
+        },
+    },
+}

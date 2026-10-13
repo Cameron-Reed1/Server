@@ -1,0 +1,32 @@
+.{
+    .packages = .{ "zsh" },
+    .dependencies = .{ },
+
+    .config = .{
+        .{
+            .type = .file,
+            .src = "zshrc",
+            .dest = "zsh/.zshrc",
+        },
+        .{
+            .type = .file,
+            .src = "zshenv",
+            .dest = "zsh/.zshenv",
+        },
+        .{
+            .type = .file,
+            .src = "zprofile",
+            .dest = "zsh/.zprofile",
+        },
+        .{
+            .type = .file,
+            .src = "aliases",
+            .dest = "zsh/.aliases",
+        },
+        .{
+            .type = .file,
+            .src = "home_zshenv",
+            .dest = "~/.zshenv",
+        },
+    },
+}

@@ -1,0 +1,12 @@
+.{
+    .packages = .{ "tmux" },
+    .dependencies = .{ },
+
+    .config = .{
+        .{
+            .type = .file,
+            .src = "tmux.conf",
+            .dest = "tmux/tmux.conf",
+        },
+    },
+}

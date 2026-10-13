@@ -1,0 +1,49 @@
+#! /usr/bin/env zsh
+
+
+if [ "$TERM" = 'xterm-kitty' ]; then
+	alias ssh='kitty +kitten ssh'
+	alias clear='printf "\033c"'
+fi
+
+
+
+alias pgrep='pgrep -a'
+alias grep='grep --color=auto'
+
+
+if command -v eza &> /dev/null; then
+    alias ls='eza --icons=auto --group-directories-first'
+else
+    alias ls='ls --color=auto'
+fi
+
+
+if command -v fastfetch &> /dev/null; then
+    alias ff='fastfetch'
+fi
+
+
+if command -v fzf &> /dev/null; then
+    alias cdf='cd $(find -L . -type d -print 2> /dev/null | fzf)'
+fi
+
+
+if command -v nvim &> /dev/null; then
+    alias nv='nvim'
+    alias nvd='nvim .'
+
+    bindkey -s '^n' 'nvd\n'
+fi
+
+
+if command -v yazi &> /dev/null; then
+    bindkey -s '^o' 'yazicd\n'
+    bindkey -s '^f' 'yazi\n'
+fi
+
+
+
+alias :w='echo "Saved"'
+alias :q='exit'
+alias :wq='exit'

@@ -1,0 +1,12 @@
+.{
+    .packages = .{ "fastfetch" },
+    .dependencies = .{ },
+
+    .config = .{
+        .{
+            .type = .file,
+            .src = "debian/config.jsonc",
+            .dest = "fastfetch/config.jsonc",
+        },
+    },
+}

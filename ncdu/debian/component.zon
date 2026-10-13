@@ -1,0 +1,12 @@
+.{
+    .packages = .{ "ncdu" },
+    .dependencies = .{ },
+
+    .config = .{
+        .{
+            .type = .file,
+            .src = "config",
+            .dest = "ncdu/config",
+        },
+    },
+}

@@ -3,6 +3,9 @@
 #
 
 
+export LANG=en_US
+
+
 # Copied from Arch Linux's default /etc/profile
 function append_path() {
     [ ! -d "$1" ] && return

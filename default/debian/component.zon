@@ -1,6 +1,6 @@
 .{
     .packages = .{ "ncdu" },
-    .dependencies = .{ "bash", "zsh", "tmux", "fastfetch" },
+    .dependencies = .{ "bash", "zsh", "tmux", "vim", "fastfetch" },
 
     .config = .{ },
 }
